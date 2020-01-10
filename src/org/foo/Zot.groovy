@@ -13,8 +13,7 @@ def checkOutFrom(repo) {
         new InputStreamReader(connection.getInputStream(), "UTF-8")
         echo " 3  $repo "
         def file=new File('a.txt')
-        file.write "First line\n"
-        file << "Second line\n"
+        echo  file.path
         println file.text
     } catch (FileNotFoundException e1) {
         echo "File not yet available: ${url.toString()}"
