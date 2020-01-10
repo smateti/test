@@ -1,6 +1,6 @@
 node {
    echo 'Hello World'
-    def url = new URL("https://raw.githubusercontent.com/fabric8io/fabric8-pipeline-library/blob/master/pom.xml")
+    def url = new URL("https://github.com/smateti/hello/blob/master/README.md")
     HttpURLConnection connection = url.openConnection()
 
     connection.setRequestMethod("GET")
