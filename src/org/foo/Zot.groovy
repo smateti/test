@@ -7,11 +7,11 @@ def checkOutFrom(repo) {
 
     connection.setRequestMethod("GET")
     connection.setDoInput(true)
-    echo "$repo2 "
+    echo "2 $repo "
     try {
         connection.connect()
         new InputStreamReader(connection.getInputStream(), "UTF-8")
-        echo "$repo3 "
+        echo " 3  $repo "
     } catch (FileNotFoundException e1) {
         echo "File not yet available: ${url.toString()}"
         return false
